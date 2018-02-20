@@ -1,33 +1,32 @@
 var Todo = (function() {
+  var addBtn;
 
-    var addBtn;
+	function init() {
+			cacheElements();
+			addListeners();
+	}
 
-    function init() {
-        cacheElements();
-        addListeners();
-    }
+	function cacheElements() {
+			addBtn = document.getElementById("add");
+	}
 
-    function cacheElements() {
-        addBtn = document.getElementById("add");
-    }
+	function addListeners() {
+			addBtn.addEventListener('click', function(event){
+					
+			});
+	}
 
-    function addListeners() {
-        addBtn.addEventListener('click', function(event){
-            
-        });
-    }
+	function addBtnClick() {
 
-    function addBtnClick() {
+	}
 
-    }
-
-    return {
-        init: init
-    };
+	return {
+			init: init
+	};
 
 })();
 
 
 window.onload = function() {
-    Todo.init();
+  Todo.init();
 }
