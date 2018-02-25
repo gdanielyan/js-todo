@@ -30,7 +30,7 @@ var Todo = (function() {
                 addItem();
             }
         });
-    }
+    }   
 
     function addItem() {
         var value = document.getElementById('item').value;
